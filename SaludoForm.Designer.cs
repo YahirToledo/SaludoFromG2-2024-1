@@ -10,6 +10,7 @@ namespace SaludoFromG2_2024_1
         private TextBox txtbNombre;
         private Button btnAceptar;
         private Button btnLimpiar;
+        private int contador;
 
         public void InitializeComponent()
         {
@@ -19,25 +20,27 @@ namespace SaludoFromG2_2024_1
 
             //Label: Ingresa tu nombre
             lbNombre = new Label(); //Instaciamos objeto
-            lbNombre.Text = "Ingresa tu nombre";
-            lbNombre.Location = new Point(200, 100);
+            lbNombre.Text = "Ingresa tu nombre " + contador;
+            lbNombre.Location = new Point(150, 100);
 
             //TextBox
             txtbNombre = new TextBox();
             txtbNombre.Text = "";
             txtbNombre.Size = new Size(250, 10);
-            txtbNombre.Location = new Point(200, 130);
+            txtbNombre.Location = new Point(150, 130);
 
             //btbAceptar
             btnAceptar = new Button();
             btnAceptar.Text = "Aceptar";
-            btnAceptar.Location = new Point(200, 200);
+            btnAceptar.Location = new Point(150, 200);
             btnAceptar.Click += new EventHandler(btnAceptar_Click);
 
             //btnLimpiar 
             btnLimpiar = new Button();
             btnLimpiar.Text = "Limpiar";
-            btnLimpiar.Location = new Point(400, 200);
+            btnLimpiar.Location = new Point(300, 200);
+            btnLimpiar.Click += new EventHandler(btnLimpiar_Click);
+           
 
             this.Controls.Add(lbNombre);
             this.Controls.Add(txtbNombre);

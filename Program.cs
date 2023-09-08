@@ -7,7 +7,6 @@ namespace SaludoFromG2_2024_1
     {
         static void Main(string[] args)
         {
-            //SaludoForm saludoForm = new SaludoForm();
             Application.Run(new SaludoForm()); //Objeto anonimo
         }
     }

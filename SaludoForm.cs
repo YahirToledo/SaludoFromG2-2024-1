@@ -18,6 +18,12 @@ namespace SaludoFromG2_2024_1
         {
             string nombre = txtbNombre.Text;
             MessageBox.Show("Hola " + nombre);
+            contador++;
+            lbNombre.Text = "Ingresa tu nombre " + contador;
+        }
+        internal void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtbNombre.Text = "";
         }
     }
 }
